@@ -20,7 +20,7 @@ public class LibraryController {
 
     @PostMapping("/addBook")
     @ResponseStatus(HttpStatus.CREATED)
-    public String getUser(@RequestBody Book book){
+    public String addBook(@RequestBody Book book){
         return libraryService.addBook(book);
     }
 
